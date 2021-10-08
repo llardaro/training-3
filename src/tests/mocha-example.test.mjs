@@ -1,4 +1,4 @@
-const assert = require('assert')
+import assert from 'assert'
 
 describe('Simple math test', () => {
 	it('Should return 2', () => {

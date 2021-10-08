@@ -1,4 +1,4 @@
-const expect = require('chai').expect
+import { expect } from 'chai'
 
 describe('Simple math test', () => {
 	it('Sum', () => {

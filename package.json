@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist",
+  "type": "module",
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint --fix src/**/*.ts",
@@ -10,7 +11,7 @@
     "prestart": "npm run build",
     "start": "node .",
     "dev": "nodemon .",
-    "test": "mocha 'src/tests/*.ts'"
+    "test": "mocha 'src/tests/*.mjs'"
   },
   "repository": {
     "type": "git",
