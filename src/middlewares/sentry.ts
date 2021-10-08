@@ -8,7 +8,7 @@ const sentryInit = (app: any) => {
 			new Sentry.Integrations.Http({ tracing: true }),
 			new Tracing.Integrations.Express({ app })
 		],
-		environment: process.env.MODE
+		environment: 'dev'
 	})
 
 	app.use(Sentry.Handlers.requestHandler())
@@ -16,4 +16,4 @@ const sentryInit = (app: any) => {
 	app.use(Sentry.Handlers.errorHandler())
 }
 
-export default sentryInit
+export default { sentryInit }
