@@ -2,14 +2,14 @@
   "name": "training-3",
   "version": "1.0.0",
   "description": "",
-  "main": "dist",
+  "main": "build",
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint --fix src/**/*.ts",
-    "build": "tsc",
+    "build": "tsc -p .",
     "prestart": "npm run build",
-    "start": "node .",
-    "dev": "nodemon .",
+    "start": "NODE_PATH=./build node build/index.js",
+    "dev": "nodemon src/index.ts",
     "test": "mocha 'src/tests/*.mjs'"
   },
   "repository": {
@@ -43,6 +43,8 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.0",
     "mocha": "^9.1.2",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   }
 }

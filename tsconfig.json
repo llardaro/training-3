@@ -2,12 +2,12 @@
     "compilerOptions": {
         "module": "commonjs",
         "esModuleInterop": true,
-        "target": "es6",
+        "target": "esnext",
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
-        "baseUrl": ".",
+        "outDir": "./build",
+        "baseUrl": "./src",
         "paths": {
             "*": [
                 "node_modules/*"
