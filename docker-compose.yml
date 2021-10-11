@@ -43,3 +43,14 @@ services:
     image: redis
     ports:
       - '6379:6379'
+
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: training_3_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1tc2020

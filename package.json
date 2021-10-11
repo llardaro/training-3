@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/llardaro/training-3#readme",
   "dependencies": {
+    "@prisma/client": "^3.2.1",
     "@sentry/node": "^6.13.2",
     "@sentry/tracing": "^6.13.2",
     "dotenv": "^10.0.0",
@@ -44,6 +45,7 @@
     "eslint-plugin-react": "^7.26.0",
     "mocha": "^9.1.2",
     "nodemon": "^2.0.13",
+    "prisma": "^3.2.1",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   }
